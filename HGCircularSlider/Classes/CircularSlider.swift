@@ -227,7 +227,7 @@ open class CircularSlider: UIControl {
             var radius =  min(bounds.center.x, bounds.center.y)
             
             // if we use an image for the thumb, the radius of the image will be used
-            let maxThumbRadius = max(thumbRadius, (self.endThumbImage?.size.height ?? 0) / 2)
+            let maxThumbRadius = thumbRadius
 
             // all elements should be inside the view rect, for that we should subtract the highest value between the radius of thumb and the line width
             radius -= max(lineWidth, (maxThumbRadius + thumbLineWidth + thumbOffset))
